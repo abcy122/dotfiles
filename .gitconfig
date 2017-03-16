@@ -1,4 +1,8 @@
 [alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -121,14 +125,14 @@
 
 [color "status"]
 
-	added = yellow
-	changed = green
-	untracked = cyan
+	added = green
+	changed = yellow
+	untracked = red
 
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	gpgsign = false
 
 [diff]
 
